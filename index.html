@@ -885,11 +885,59 @@
     <div class="header-tabs" id="header-tabs"></div>
 </header>
 <main>
+
     <!-- Hero Section -->
     <section class="hero-section">
         <div class="hero-border"></div>
         <div class="hero-content" id="hero-section"></div>
     </section>
+
+    <!-- Timeline Section -->
+    <section class="timeline-section">
+        <div class="timeline-header">
+            <span class="code-keyword">val</span>
+            <h2 style="font-size: 1.5rem; font-weight: 700; color: white; margin: 0;">careerTimeline</h2>
+            <span style="color: white;">=</span>
+            <span class="code-function">listOf</span>(
+        </div>
+
+        <div class="timeline-container">
+            <div class="timeline-line"></div>
+            <div class="timeline-bracket open">{</div>
+
+            <div class="timeline-items" id="timeline-container"></div>
+
+            <div class="timeline-bracket close">}</div>
+        </div>
+
+        <div style="font-size: 1.5rem; font-weight: 700; color: white; margin-top: 2rem; margin-bottom: 5rem; margin-left: 1rem;">)</div>
+    </section>
+
+    <!-- Skills Section -->
+    <section>
+        <div class="timeline-header">
+            <span class="code-keyword">object</span>
+            <h2 style="font-size: 1.5rem; font-weight: 700; color: white; margin: 0;">TechStack</h2>
+            <span style="color: white;">{</span>
+        </div>
+        <div class="skills-grid" id="skills-grid"></div>
+        <div style="font-size: 2.5rem; font-weight: 700; color: white; margin-top: 2rem;">}</div>
+    </section>
+
+    <!-- Projects Section -->
+    <section>
+        <div class="timeline-header">
+            <span class="code-keyword">val</span>
+            <h2 style="font-size: 1.5rem; font-weight: 700; color: white; margin: 0;">projects</h2>
+            <span style="color: white;">=</span>
+            <span class="code-function">listOf</span>(
+        </div>
+        <div class="projects-grid" id="projects-grid"></div>
+        <div style="font-size: 1.5rem; font-weight: 700; color: white; margin-top: 2rem;">)</div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer"></footer>
 </main>
 </body>
 </html>
