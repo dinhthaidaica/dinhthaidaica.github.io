@@ -74,7 +74,13 @@ export function renderHero(containerId = 'hero-section') {
     const specialtiesP = document.createElement('p');
     specialtiesP.innerHTML = `specialties = <span class="code-function">listOf</span>(${hero.specialties.map(s => `<span class="code-string">"${s}"</span>`).join(', ')})`;
 
-    paramsDiv.append(nameP, roleP, specialtiesP);
+    const interestedIn = document.createElement('p');
+    interestedIn.innerHTML = `interestedIn = <span class="code-function">listOf</span>(${hero.interestedIn.map(s => `<span class="code-string">"${s}"</span>`).join(', ')})`;
+
+    const handsOnExperience = document.createElement('p');
+    handsOnExperience.innerHTML = `handsOnExperience = <span class="code-function">listOf</span>(${hero.handsOnExperience.map(s => `<span class="code-string">"${s}"</span>`).join(', ')})`;
+
+    paramsDiv.append(nameP, roleP, specialtiesP, interestedIn, handsOnExperience);
 
     // -----------------------
     // Closing parenthesis

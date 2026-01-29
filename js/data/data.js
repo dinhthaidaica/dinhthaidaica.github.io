@@ -1,9 +1,14 @@
 export const portfolioData = {
         hero: {
-            comment: "Broad expertise in native Android development, backend integration, and infrastructure.\n Experienced in modernizing legacy systems, leading large-scale rewrites, and building scalable, secure architectures.\n Strongadvocate for CI/CD, Agile practices, and high-quality software that delivers real-world impact.",
+            comment: "Senior Software Engineer with broad expertise in mobile development, backend integration, and infrastructure.\n " +
+                "Strong background in native Android development, including working with legacy codebases, leading large-scale rewrites, and designing robust, scalable systems\n" +
+                "Experienced in Agile/Scrum delivery across organizations ranging from startups to large enterprises.\n" +
+                "Strong advocate for CI/CD, Agile practices, and high-quality software that delivers real-world impact.\n",
             name: "Thai Phan Dinh",
             role: "Senior Software Developer",
-            specialties: ["Mobile", "Android", "Kotlin", "Jetpack Compose"]
+            specialties: ["Mobile", "Android", "Kotlin", "Jetpack Compose"],
+            interestedIn: ["System Architecture", "Cyber Security"],
+            handsOnExperience: ["Frontend", "Backend", "Devops"]
         },
 
         floatingActions: [
@@ -132,14 +137,15 @@ export const portfolioData = {
 
         skills: [
             {
-                category: "Frontend",
-                icon: "layers",
+                category: "Mobile",
+                icon: "mobile",
                 color: "code-keyword",
                 items: [
-                    { name: "React", level: "Expert" },
-                    { name: "TypeScript", level: "Advanced" },
-                    { name: "Next.js", level: "Advanced" },
-                    { name: "Tailwind CSS", level: "Expert" }
+                    { name: "Kotlin - Android", level: "Expert"},
+                    { name: "Jetpack Compose", level: "Expert"},
+                    { name: "Java", level: "Advanced"},
+                    { name: "KMP", level: "Advanced"},
+                    { name: "iOS - Swift - SwiftUI", level: "Intermediate"},
                 ],
                 link: null
             },
@@ -148,10 +154,11 @@ export const portfolioData = {
                 icon: "database",
                 color: "code-function",
                 items: [
-                    { name: "Node.js", level: "Expert" },
+                    { name: "Ktor", level: "Advanced" },
+                    { name: "RESTFul", level: "Advanced" },
                     { name: "PostgreSQL", level: "Advanced" },
-                    { name: "GraphQL", level: "Intermediate" },
-                    { name: "Redis", level: "Intermediate" }
+                    { name: "GraphQL", level: "Advanced" },
+                    { name: "mySQL", level: "Advanced" }
                 ],
                 link: null
             },
@@ -160,10 +167,22 @@ export const portfolioData = {
                 icon: "memory",
                 color: "code-string",
                 items: [
-                    { name: "Docker", level: "Advanced" },
-                    { name: "AWS", level: "Advanced" },
-                    { name: "GitHub Actions", level: "Expert" },
-                    { name: "Kubernetes", level: "Intermediate" }
+                    { name: "GitHub Actions", level: "Advanced" },
+                    { name: "Firebase", level: "Advanced" },
+                    { name: "Docker", level: "Intermediate" },
+                    { name: "AWS", level: "Intermediate" },
+                    { name: "CircleCI", level: "Intermediate" },
+                    { name: "Google Cloud", level: "Intermediate" },
+                ],
+                link: null
+            },
+            {
+                category: "Frontend",
+                icon: "layers",
+                color: "code-keyword",
+                items: [
+                    { name: "TypeScript", level: "Intermediate" },
+                    { name: "Next.js", level: "Intermediate" },
                 ],
                 link: null
             }
@@ -171,30 +190,30 @@ export const portfolioData = {
 
         projects: [
             {
-                title: "Task Management Platform",
-                description: "Real-time collaborative task manager with team features, notifications, and analytics dashboard.",
-                technologies: ["React", "Firebase", "WebSockets"],
-                github: "https://github.com/yourusername/tasks",
+                title: "KlarTilProeve",
+                description: "A Kotlin Multiplatform application for practicing Danish citizenship and permanent residence tests.",
+                technologies: ["KMP", "Android", "iOS", "G-Cloud", "Ktor"],
+                github: "https://github.com/dinhthaidaica/BetterDanish",
                 demo: "https://tasks.example.com"
             },
             {
-                title: "Weather Dashboard",
-                description: "Interactive weather app with forecasts, maps, and historical data visualization.",
-                technologies: ["Vue.js", "Chart.js", "Weather API"],
-                github: "https://github.com/yourusername/weather",
+                title: "AI Chat Collapser",
+                description: "A Chrome extension that enhances navigation in AI chat platforms by allowing you to collapse and expand AI responses",
+                technologies: ["TypeScript", "Manifest V3", "MutationObserver"],
+                github: "https://github.com/dinhthaidaica/ai-chat-collapser",
                 demo: null
             },
-            {
+            /*{
                 title: "Developer Blog",
                 description: "Technical blog with markdown support, syntax highlighting, and SEO optimization.",
                 technologies: ["Next.js", "MDX", "Tailwind"],
                 github: "https://github.com/yourusername/blog",
                 demo: "https://blog.example.com"
-            },
+            },*/
             {
-                title: "API Gateway",
-                description: "Microservices API gateway with rate limiting, authentication, and request routing.",
-                technologies: ["Node.js", "Redis", "Docker"],
+                title: "FlightWatch",
+                description: "A global flight price monitoring and notification service that helps price-sensitive travelers decide when to buy flight tickets by alerting them when prices drop below their desired threshold.",
+                technologies: ["Kotlin + Ktor", "PostgreSQL + Exposed ORM", "Docker", "Quartz"],
                 github: "https://github.com/yourusername/gateway",
                 demo: null
             }
